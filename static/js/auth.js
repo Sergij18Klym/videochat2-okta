@@ -17,6 +17,7 @@ var okta = new OktaSignIn({
 // Render the login form.
 function showLogin() {
   okta.renderEl({ el: "#okta-login-container" }, function(res) {}, function(err) {
+    console.log(err);
     alert("Couldn't render the login form, something horrible must have happened. Please refresh the page.");
   });
 
